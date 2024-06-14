@@ -1,2 +1,4 @@
+# My dotfiles
 # dotfiles
-# dotfiles
+
+Still working on making it better
