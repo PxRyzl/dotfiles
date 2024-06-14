@@ -1,0 +1,6 @@
+#! /bin/bash
+
+pkill -o hyprlock
+
+exec hyprlock
+

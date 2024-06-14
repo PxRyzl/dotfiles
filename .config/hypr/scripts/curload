@@ -1,0 +1,10 @@
+#! /bin/bash
+
+curs=$(cat ~/.config/xsettingsd/xsettingsd.conf | grep Gtk/CursorThemeName | awk '{print $2}')
+
+hyprctl setcursor $curs 24
+
+
+
+
+

@@ -1,0 +1,15 @@
+#! /usr/bin/env bash
+#wallpaper () {
+directory=~/.config/hypr/wallpaper
+monitor=`hyprctl monitors | grep Monitor | awk '{print $2}'`
+
+if [ -d "$directory" ]; then
+	background=$(ls $directory/Hiroisleep.jpg )
+
+	hyprctl hyprpaper unload all
+	hyprctl hyprpaper preload $background
+	hyprctl hyprpaper wallpaper "$monitor, $background"
+
+fi
+
+
